@@ -1,0 +1,18 @@
+#nav{
+    height: 10vh;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+ol{
+    list-style: none;
+}
+#nav #a{
+    display: flex; 
+    gap: 20px;
+}
+#nav li a{
+    color: white;
+    text-decoration: none;
+}

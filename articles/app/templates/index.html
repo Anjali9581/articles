@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+
+<!-- {{data}} -->
+ <br> <br>
+<CENter> <h1>TODAY'S ARTICLES</h1></CENter>
+{% for i in data %}
+<div id="div">
+<h3 id="h1" > <br><a  href="{% url 'display' i.id %}">{{i.name}}</a></h3>
+
+<p style="text-align: center;">{{i.description|truncatewords:10}}</p>
+</div>
+<br>
+{% endfor %}
+{% endblock content %}

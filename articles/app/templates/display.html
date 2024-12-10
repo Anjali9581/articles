@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+    p{
+        font-size: 20px;
+        text-transform: capitalize;
+    }
+    p::first-letter{
+       font-size: 45px;
+
+    }
+    h1{
+        text-transform: uppercase;
+    }
+   
+</style>
+<center><h1>{{data1.name}}</h1></center>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{data1.description}}</p>
+
+{% endblock content %}
